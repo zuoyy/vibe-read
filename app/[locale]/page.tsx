@@ -93,7 +93,7 @@ export default function HomePage() {
   }
   const item: Variants = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } }
+    show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" as const } }
   }
   return (
     <main className="min-h-screen relative text-black selection:bg-black selection:text-white">
