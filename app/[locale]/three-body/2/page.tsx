@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 import { Link } from '@/i18n/navigation'
 import GenericCover from '@/app/components/common/GenericCover'
 import { useTranslations } from 'next-intl'

@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 import Content from '@/app/components/three-body/Content'
 import Hero from '@/app/components/three-body/Hero'
 import { getTranslations } from 'next-intl/server'

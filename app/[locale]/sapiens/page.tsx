@@ -1,3 +1,5 @@
+export const runtime = 'edge'
+
 import Content from '@/app/components/sapiens/Content'
 import Hero from '@/app/components/sapiens/Hero'
 import { getTranslations } from 'next-intl/server'

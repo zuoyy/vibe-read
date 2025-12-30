@@ -1,4 +1,6 @@
 'use client'
+
+export const runtime = 'edge'
 import { useTranslations } from 'next-intl'
 import LanguageSwitch from '@/app/components/common/LanguageSwitch'
 import { Link } from '@/i18n/navigation'
