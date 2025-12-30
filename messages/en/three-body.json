@@ -1,0 +1,178 @@
+{
+    "metadata": {
+        "title": "Remembrance of Earth's Past",
+        "description": "The Trilogy that defined detailed cosmic horror.",
+        "author": "Liu Cixin",
+        "coverStyle": {
+            "color": "#050505",
+            "texture": "cyber"
+        }
+    },
+    "hub": {
+        "title": "Remembrance of Earth's Past",
+        "subtitle": "The Trilogy that defined detailed cosmic horror.",
+        "description": "From the Red Coast Base to the heat death of the universe.",
+        "author": "Liu Cixin",
+        "intro": "The universe is a dark forest.",
+        "enter": "ENTER THE TRILOGY",
+        "volumes": {
+            "1": "VOLUME I",
+            "2": "VOLUME II",
+            "3": "VOLUME III"
+        },
+        "back": "Back to Home",
+        "vol1": {
+            "title": "The Three-Body Problem",
+            "desc": "The betrayal of humanity."
+        },
+        "vol2": {
+            "title": "The Dark Forest",
+            "desc": "The cosmic sociology."
+        },
+        "vol3": {
+            "title": "Death's End",
+            "desc": "The zero-dimensional grave."
+        }
+    },
+    "vol1": {
+        "metadata": {
+            "title": "The Three-Body Problem",
+            "subtitle": "Ye Wenjie's Betrayal",
+            "description": "Physics has never existed, and will never exist."
+        },
+        "content": {
+            "synopsis": "Cultural Revolution. Red Coast Base. A message sent to the stars. Humanity's first contact with an alien civilization turns into a countdown to doomsday.",
+            "characters": {
+                "title": "Dramatis Personae",
+                "list": [
+                    {
+                        "name": "Ye Wenjie",
+                        "role": "The Betrayer",
+                        "desc": "Astrophysicist. Witnessed the madness of humanity and decided to invite an external power to purify the Earth.",
+                        "quote": "I lit the fire, but I cannot control how it burns."
+                    },
+                    {
+                        "name": "Wang Miao",
+                        "role": "The Witness",
+                        "desc": "Nanomaterials researcher. Dragged into the game by the military. The eyes through which we see the universe collapse.",
+                        "quote": "The entire universe has flickered for you."
+                    },
+                    {
+                        "name": "Shi Qiang",
+                        "role": "The Guardian",
+                        "desc": "A rude, chain-smoking detective. He doesn't understand physics, but he understands survival.",
+                        "quote": "Even if God is dead, the bugs are still multiplying."
+                    },
+                    {
+                        "name": "Mike Evans",
+                        "role": "The Prophet",
+                        "desc": "Heir to an oil empire. Radical environmentalist. Founded the ETO to welcome the Lord.",
+                        "quote": "We are your bugs."
+                    }
+                ],
+                "relations": "Ye Wenjie (Spiritual Leader) <-> Mike Evans (Financial Backer) | Wang Miao (Pawn) <-> Shi Qiang (Protector)"
+            },
+            "chapters": {
+                "one": {
+                    "title": "I. The Madness Years",
+                    "subtitle": "1969, Greater Khingan Mountains",
+                    "text": "The madness years of the Cultural Revolution. Ye Wenjie witnesses her father's death and loses faith in humanity.\n\nShe discovered that the sun could act as a super-antenna, amplifying radio waves by a billion times. She sent a message into the deep cosmos, a message of invitation, born from a total loss of faith in humanity.",
+                    "quote": "To conquer a civilization, you must effectively destroy its science.",
+                    "action": "TRANSMITTING SIGNAL..."
+                },
+                "two": {
+                    "title": "II. The Three-Body Game",
+                    "subtitle": "The Virtual Reality",
+                    "text": "Wang Miao put on the V-suit and entered the game. He saw a world of constant destruction. The suns did not rise and set; they danced. Sometimes three suns would appear at once, burning everything to ash.\n\nThis was not a game. It was a simulation of a real world—Alpha Centauri. A world doomed by the chaotic gravitational interaction of three suns.",
+                    "physics_caption": "CHAOTIC ERA DETECTED. PREDICTION IMPOSSIBLE."
+                },
+                "three": {
+                    "title": "III. Judgment Day",
+                    "subtitle": "The Panama Canal",
+                    "text": "The ship 'Judgment Day' approached the canal. It carried the traitor of humanity and the secrets of the Trisolarans.\n\nCaptain Shi Qiang lit a cigarette. 'Nano-material,' he grinned. The 'Flying Blade' trap was set. As the massive ship passed through the invisible nanowires, it was sliced like a loaf of bread. Layer by layer, the steel groaned and slid apart. It was a silent, brutal symphony of physics.",
+                    "quote": "\"You are bugs.\""
+                }
+            },
+            "conclusion": {
+                "title": "The End of Innocence",
+                "text": "The Three-Body Problem is not just about aliens. It is a mirror of our own history. It asks: Is humanity worth saving? And if the universe is a dark forest, should we light a fire?\n\nThe fleet is coming. But as Shi Qiang pointed out in the locust fields: 'Look at the bugs. Humans have tried to exterminate them for thousands of years. But they are still here.'",
+                "final_word": "WE ARE BUGS. BUT WE HAVE NEVER BEEN DEFEATED."
+            }
+        }
+    },
+    "vol2": {
+        "metadata": {
+            "title": "The Dark Forest",
+            "subtitle": "The Wallfacers",
+            "description": "Survival is the primary need of civilization."
+        },
+        "content": {
+            "synopsis": "Trisolaris has locked Earth's science with sophons. The Doomsday Battle is 400 years away. Humanity's only hope lies in the Wallfacer Project—strategies hidden in the human mind, the only place sophons cannot read.",
+            "intro": "The universe is a dark forest. Every civilization is an armed hunter.",
+            "chapters": {
+                "one": {
+                    "title": "I. The Wallfacers",
+                    "subtitle": "The UN Planetary Defense Council",
+                    "text": "Four men were chosen. They were given unlimited resources and no requirement to explain their actions. Their true strategic intent must remain concealed in their minds. Three of them were statesmen and scientists. The fourth, Luo Ji, was a nobody—a cynical sociologist who just wanted to live a good life.\n\nBut the Trisolarans fear him. Because he knows the cosmic axiom: 'chains of suspicion' and 'technological explosion'.",
+                    "quote": "The universe is a dark forest. Every civilization is an armed hunter stalking through the trees."
+                },
+                "two": {
+                    "title": "II. The Droplet",
+                    "subtitle": "The Doomsday Battle",
+                    "text": "Two centuries later. Humanity has built a magnificent stellar fleet: 2,000 warships, lined up in a rectangular formation to display dignity. The Trisolaran probe arrived. It was small, smooth, shaped like a teardrop. It looked fragile, like a mirror reflecting the galaxy.\n\nThen it moved. It accelerated to twice the speed of light instantly, ignoring inertia. It punched through the fusion fuel tanks of the first ship. Then the second. In 30 minutes, the pride of humanity was reduced to fireworks. It wasn't a war. It was a disrespectful swatting of a bug.",
+                    "action": "INITIATE DROPLET ATTACK"
+                },
+                "three": {
+                    "title": "III. The Spell",
+                    "subtitle": "The Grave of a Star",
+                    "text": "Luo Ji stood in the snow. He had failed as a Wallfacer. He was dying. But he had one last card.\n\nHe broadcasted the coordinates of a distant star system to the universe. Then he waited. Fifty years later, the star was destroyed by a 'photoid' from an unknown civilization. The Dark Forest theory was proven. He held a gun to his own heart—which was broadcast to the sun—threatening to expose Trisolaris to the hunters.",
+                    "quote": "I am speaking to Trisolaris. Let there be light."
+                }
+            },
+            "conclusion": {
+                "title": "Deterrence Established",
+                "text": "Luo Ji sat by the grave of the ant, holding the button that could destroy two worlds. The Trisolarans backed down. The Dark Forest Deterrence Era began. A fragile peace, built on the threat of mutual assured destruction.",
+                "final_word": "THE HUNTER IS WATCHING."
+            }
+        }
+    },
+    "vol3": {
+        "metadata": {
+            "title": "Death's End",
+            "subtitle": "Before the Collapse",
+            "description": "Death is the only lighthouse that is always lit."
+        },
+        "content": {
+            "synopsis": "The deterrence era ends. Gravity broadcast is sent. The solar system is exposed to the dark forest. Now, humanity faces the ultimate weapon of cosmic cleansing: The Dual-Vector Foil.",
+            "intro": "Weakness and ignorance are not barriers to survival, but arrogance is.",
+            "chapters": {
+                "one": {
+                    "title": "I. The Staircase Project",
+                    "subtitle": "A Brain in Space",
+                    "text": "Before the Doomsday Battle, we sent a probe. We couldn't send a human, so we sent a brain. Yun Tianming, a dying man, bought a star for Cheng Xin, the woman he secretly loved. Then he allowed his brain to be harvested and launched into the abyss, hoping to infiltrate the Trisolaran fleet.\n\nHe floated in the cold dark for centuries, dreaming of fairy tales.",
+                    "quote": "Only the brain was sent."
+                },
+                "two": {
+                    "title": "II. The Swordholder",
+                    "subtitle": "15 Minutes of Hell",
+                    "text": "Luo Ji held the switch for 54 years. He became a statue, gazing at a white wall, maintaining the deterrence. Then he handed the sword to Cheng Xin.\n\nThe Trisolarans calculated her 'deterrence degree': 10%. They attacked immediately. In 15 minutes, gravitational antennas were destroyed. The deterrence ended. Humanity was herded into Australia to be eaten.",
+                    "action": "HAND OVER THE SWORD"
+                },
+                "three": {
+                    "title": "III. The Dual Vector Foil",
+                    "subtitle": "The Starry Night",
+                    "text": "The solar system was not destroyed by raw power. It was cleaned. A slip of paper, shining with a soft light, was thrown into the system. It was a 'Dual Vector Foil'—a piece of two-dimensional space.\n\nSpace itself began to collapse. 3D objects fell into 2D. The sun, the planets, the people—unfolded into an infinite painting. It was beautiful. It was death. The entire solar system became a masterpiece of static art.",
+                    "action": "OBSERVE COLLAPSE"
+                }
+            },
+            "conclusion": {
+                "title": "Zero Dimension",
+                "text": "Cheng Xin escaped to a mini-universe. But to reboot the dying universe, all mass must be returned. She left behind a small aquarium with a fish, and stepped into the uncertain future. The universe might die, or it might be reborn.",
+                "final_word": "TIME IS THE CRUELEST FORCE."
+            }
+        }
+    },
+    "footer": {
+        "hub": "Return to Trilogy Hub"
+    }
+}

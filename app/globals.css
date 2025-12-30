@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F2F2F0;
+  --foreground: #000000;
+}
+
+/* 防止过度滚动时露出白色背景 */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overscroll-behavior: none;
+}
+
+/* Custom Scrollbar for Swiss Style */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F2F2F0;
+  border-left: 2px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border: 2px solid #F2F2F0;
+}
+
+/* Global Selection Style */
+::selection {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}

@@ -1,0 +1,41 @@
+{
+  "site": {
+    "title": "Home",
+    "description": "Welcome to my personal website"
+  },
+  "nav": {
+    "home": "Home",
+    "articles": "Books"
+  },
+  "home": {
+    "welcome": "Welcome",
+    "blogTitle": "Vibe Read",
+    "subtitle": "More than reading, it's an experience. Each book features its own design philosophy.",
+    "endOfList": "— You've reached the end (only {count} books for now) —"
+  },
+  "back": {
+    "war": "Back",
+    "terminal": "cd ..",
+    "nature": "Back",
+    "library": "Back"
+  },
+  "language": {
+    "switch": "Switch Language"
+  },
+  "footer": {
+    "copyright": "© 2025 Vibe Read. All rights reserved."
+  },
+  "tags": {
+    "ALL": "All Books",
+    "AI": "AI",
+    "GUIDE": "GUIDE",
+    "GAMEPLAY": "GAMEPLAY",
+    "DESIGN": "DESIGN",
+    "CODE": "CODE",
+    "SCI-FI": "SCI-FI",
+    "HISTORY": "HISTORY",
+    "PHILOSOPHY": "PHILOSOPHY",
+    "FUTURE": "FUTURE",
+    "LIFE": "LIFE"
+  }
+}

@@ -1,0 +1,75 @@
+{
+    "metadata": {
+        "title": "Sapiens: A Brief History of Humankind",
+        "description": "How an insignificant ape conquered the world.",
+        "author": "Yuval Noah Harari",
+        "coverStyle": {
+            "color": "#D4A373",
+            "texture": "paper"
+        }
+    },
+    "content": {
+        "synopsis": "Seventy thousand years ago, there were at least six different human species on earth. They were insignificant animals, whose ecological impact was less than that of fireflies or jellyfish. Today, there is only one. Us. Homo Sapiens. How did we do it? We bought into myths.",
+        "intro": {
+            "title": "The Animal That Became a God",
+            "text": "We are not special because of our tools or our intelligence. We are special because we are the only animal that can cooperate flexibly in large numbers. And we can do this because we are the only animal that can believe in things that exist purely in our own imagination: gods, nations, money, and human rights."
+        },
+        "chapters": {
+            "cognitive": {
+                "title": "I. The Cognitive Revolution",
+                "subtitle": "The Tree of Knowledge mutation",
+                "text": "The most important thing to know about prehistoric humans is that they were unimportant animals. But around 70,000 years ago, Sapiens started doing very special things. They left Africa for the second time. They drove all other human species to extinction.\n\nThe secret was their language. Not just describing reality ('There is a lion'), but creating new realities (' The lion is the guardian spirit of our tribe'). This allowed us to trust strangers and build cities.",
+                "toy_caption": "GOSSIP THEORY: LANGUAGE NETWORK SIMULATION"
+            },
+            "agricultural": {
+                "title": "II. The Agricultural Revolution",
+                "subtitle": "History's Biggest Fraud",
+                "text": "Scholars once proclaimed that the agricultural revolution was a great leap forward for humanity. They told a tale of progress fueled by human brain power. Evolution gradually produced ever more intelligent people. Eventually, people were so smart that they were able to decipher nature’s secrets, tame sheep and cultivate wheat. As soon as this happened, they cheerfully abandoned the grueling, dangerous, and often spartan life of hunter-gatherers, settling down to enjoy the pleasant, satiated life of farmers.\n\nThat tale is a fantasy. There is no evidence that people became more intelligent with time. Foragers knew the secrets of nature long before the Agricultural Revolution, since their survival depended on an intimate knowledge of the animals and plants they hunted and gathered. Rather than heralding a new era of easy living, the Agricultural Revolution left farmers with lives generally more difficult and less satisfying than those of foragers. Hunter-gatherers spent their time in more stimulating and varied ways, and were less in danger of starvation and disease. The Agricultural Revolution certainly enlarged the sum total of food at the disposal of humankind, but the extra food did not translate into a better diet or more leisure. Rather, it translated into population explosions and pampered elites. The average farmer worked harder than the average forager, and got a worse diet in return. The Agricultural Revolution was history’s biggest fraud.",
+                "quote": "We did not domesticate wheat. Wheat domesticated us."
+            },
+            "scientific": {
+                "title": "III. The Scientific Revolution",
+                "subtitle": "The Discovery of Ignorance",
+                "text": "The greatest discovery of the Scientific Revolution was the discovery of ignorance. Premodern traditions of knowledge such as Islam, Christianity, Buddhism and Confucianism asserted that everything that is important to know about the world was already known. The great gods and the one all-wise Creator had revealed all wisdom to us in scriptures and oral traditions.\n\nModern science differs from all previous traditions of knowledge in three critical ways:\n\n1. The willingness to admit ignorance.\n2. The centrality of observation and mathematics.\n3. The acquisition of new powers.\n\nWe realized we didn't know everything. And that admission unleashed the power to reshape the planet."
+            }
+        },
+        "conclusion": {
+            "title": "The Future",
+            "text": "We are now standing on the threshold of heaven and hell, moving nervously between the gate of the one and the anteroom of the other. History is still undecided, and there are still members of the Sapiens species who believe that our path can be chosen.",
+            "final_word": "IS THERE ANYTHING MORE DANGEROUS THAN DISSATISFIED AND IRRESPONSIBLE GODS WHO DON'T KNOW WHAT THEY WANT?"
+        }
+    },
+    "toy": {
+        "disconnected": "CLICK TO SPREAD FICTION",
+        "connected": "MYTH SHARED: NETWORK ESTABLISHED",
+        "center": "Common Myth\nUnified Tribe",
+        "wheat": {
+            "title": "THE LUXURY TRAP",
+            "population": "POPULATION",
+            "happiness": "HAPPINESS",
+            "action": "DOMESTICATE WHEAT",
+            "instruction": "Planting wheat provides more calories but demands more labor.",
+            "trap_warning": "TRAP ACTIVATED: YOU ARE WORKING HARDER."
+        }
+    },
+    "timeline": {
+        "title": "Timeline of History",
+        "events": {
+            "cognitive": {
+                "title": "The Cognitive Revolution",
+                "desc": "The Tree of Knowledge mutation. Legends, myths, gods, and religions appeared for the first time with the Cognitive Revolution.",
+                "year": "70,000 YEARS AGO"
+            },
+            "agricultural": {
+                "title": "The Agricultural Revolution",
+                "desc": "History's biggest fraud. We did not domesticate wheat. It domesticated us.",
+                "year": "12,000 YEARS AGO"
+            },
+            "scientific": {
+                "title": "The Scientific Revolution",
+                "desc": "The discovery of ignorance. Humankind began to acquire unprecedented power by admitting it didn't know everything.",
+                "year": "500 YEARS AGO"
+            }
+        }
+    }
+}
