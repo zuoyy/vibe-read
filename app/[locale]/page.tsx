@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 import LanguageSwitch from '@/app/components/common/LanguageSwitch'
 import { Link } from '@/i18n/navigation'
 import { BookProject } from '@/app/components/types'
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 import { useRef, useState } from 'react'
 import GenericCover from '@/app/components/common/GenericCover'
 // Mock Books Definition
@@ -84,14 +84,14 @@ export default function HomePage() {
   const filteredLibrary = selectedCategory === 'ALL'
     ? library
     : library.filter(book => book.meta.tags.includes(selectedCategory))
-  const container = {
+  const container: Variants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
       transition: { staggerChildren: 0.1 }
     }
   }
-  const item = {
+  const item: Variants = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: "easeOut" } }
   }
