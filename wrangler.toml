@@ -2,4 +2,4 @@
 name = "vibe-read"
 compatibility_date = "2024-11-01"
 compatibility_flags = ["nodejs_compat"] # 添加这一行
-pages_build_output_dir = ".vercel/output"
+pages_build_output_dir = ".vercel/output/static"
