@@ -62,7 +62,7 @@ export default function TrilogyController() {
         <main className="min-h-screen bg-[#050505] text-white relative">
 
             {/* Sticky Navigation */}
-            <nav className="sticky top-0 z-50 bg-[#050505]/80 backdrop-blur-md border-b border-white/10 px-6 py-4 flex items-center justify-between">
+            <nav className="fixed top-0 left-0 right-0 z-50 bg-[#050505]/80 backdrop-blur-md border-b border-white/10 px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-4">
                     <Link href="/" className="text-xs font-mono opacity-50 hover:opacity-100 transition-opacity">
                         ← {tBack('library')}
@@ -87,7 +87,7 @@ export default function TrilogyController() {
             </nav>
 
             {/* Content Area */}
-            <div className="relative min-h-[calc(100vh-64px)] pb-24">
+            <div className="relative min-h-[calc(100vh-64px)] pb-24 pt-20">
                 {/* Accent Background based on active volume */}
                 <div
                     className="fixed top-0 left-0 right-0 h-[50vh] opacity-10 blur-[120px] pointer-events-none -z-10 transition-colors duration-1000"
