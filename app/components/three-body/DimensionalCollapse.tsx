@@ -3,7 +3,10 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
+import { useTranslations } from 'next-intl'
+
 export default function DimensionalCollapse() {
+    const t = useTranslations('three-body.vol3.content')
     const [collapsed, setCollapsed] = useState(false)
 
     const handleCollapse = () => {
@@ -49,7 +52,7 @@ export default function DimensionalCollapse() {
                 transition={{ duration: collapsed ? 4 : 2, repeat: collapsed ? 0 : Infinity }}
                 onClick={handleCollapse}
             >
-                {!collapsed && <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 font-mono text-[10px] whitespace-nowrap text-white/50">CLICK TO FLATTEN</div>}
+                {!collapsed && <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 font-mono text-[10px] whitespace-nowrap text-white/50">{t('interactive.click_to_flatten')}</div>}
             </motion.div>
 
             {/* Van Gogh Effect (After Collapse) */}
@@ -58,7 +61,7 @@ export default function DimensionalCollapse() {
                     initial={{ opacity: 0, clipPath: 'circle(0% at 50% 50%)' }}
                     animate={{ opacity: 1, clipPath: 'circle(150% at 50% 50%)' }}
                     transition={{ duration: 4, ease: "easeInOut" }}
-                    className="absolute inset-0 bg-[url('/noise.png')] mix-blend-overlay z-40 bg-purple-900/50"
+                    className="absolute inset-0 mix-blend-overlay z-40 bg-purple-900/50"
                 >
                     <div className="absolute inset-0 flex flex-col items-center justify-center">
                         {[...Array(50)].map((_, i) => (

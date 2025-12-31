@@ -16,8 +16,7 @@ export default function ThreeBodyCover({ inShelf = false, color, title = '' }: T
 
     return (
         <div className="relative w-full h-full overflow-hidden bg-black flex flex-col items-center justify-center p-4">
-            {/* 1. base texture (subtle static) */}
-            <div className="absolute inset-0 opacity-10 pointer-events-none bg-[url('/noise.png')] mix-blend-overlay" />
+
 
             {/* 2. subtle texture (original circles) */}
             <div className="absolute inset-0 opacity-20 pointer-events-none">

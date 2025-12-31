@@ -44,7 +44,7 @@
     "vol1": {
         "metadata": {
             "title": "The Three-Body Problem",
-            "subtitle": "Ye Wenjie's Betrayal",
+            "subtitle": "Project Red Coast: The Twilight of Humanity",
             "description": "Physics has never existed, and will never exist.",
             "warning": "DO NOT ANSWER! DO NOT ANSWER! DO NOT ANSWER!"
         },
@@ -90,7 +90,8 @@
                     "subtitle": "1969, Greater Khingan Mountains",
                     "text": "The madness years of the Cultural Revolution. Ye Wenjie witnesses her father's death and loses faith in humanity.\n\nShe discovered that the sun could act as a super-antenna, amplifying radio waves by a billion times. She sent a message into the deep cosmos, a message of invitation, born from a total loss of faith in humanity.",
                     "quote": "To conquer a civilization, you must effectively destroy its science.",
-                    "action": "TRANSMITTING SIGNAL..."
+                    "action": "Transmitting Signal...",
+                    "action_sent": "SIGNAL SENT TO ALPHA CENTAURI"
                 },
                 "two": {
                     "title": "II. The Three-Body Game",
@@ -150,6 +151,10 @@
                     }
                 ],
                 "relations": "Luo Ji (Swordholder) <-> Shi Qiang (Guardian) | Zhang Beihai (Escapist) <-> Ding Yi (Seeker)"
+            },
+            "interactive": {
+                "status_destroyed": "STATUS: FLEET DESTROYED",
+                "click_to_attack": "CLICK TO INITIATE ATTACK"
             },
             "chapters": {
                 "one": {
@@ -217,6 +222,9 @@
                 ],
                 "relations": "Cheng Xin (Love) <-> Wade (Beastliness) | Yun Tianming (Guardian) <-> Sophon (Destruction)"
             },
+            "interactive": {
+                "click_to_flatten": "CLICK TO FLATTEN"
+            },
             "chapters": {
                 "one": {
                     "title": "I. The Staircase Project",
@@ -234,13 +242,13 @@
                     "title": "III. The Dual Vector Foil",
                     "subtitle": "The Starry Night",
                     "text": "The solar system was not destroyed by raw power. It was cleaned. A slip of paper, shining with a soft light, was thrown into the system. It was a 'Dual Vector Foil'—a piece of two-dimensional space.\n\nSpace itself began to collapse. 3D objects fell into 2D. The sun, the planets, the people—unfolded into an infinite painting. It was beautiful. It was death. The entire solar system became a masterpiece of static art.",
-                    "action": "OBSERVE COLLAPSE"
+                    "action": "Observe Collapse"
                 }
             },
             "conclusion": {
                 "title": "Zero Dimension",
                 "text": "Cheng Xin escaped to a mini-universe. But to reboot the dying universe, all mass must be returned. She left behind a small aquarium with a fish, and stepped into the uncertain future. The universe might die, or it might be reborn.",
-                "final_word": "TIME IS THE CRUELEST FORCE."
+                "final_word": "TIME IS THE CRUELIEST FORCE."
             }
         }
     },

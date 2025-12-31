@@ -49,8 +49,7 @@ export default function ChaoticSphereBackground() {
                 />
             ))}
 
-            {/* Overlay grid/noise for texture */}
-            <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay" />
+
         </div>
     )
 }

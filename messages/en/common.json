@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Vibe Read",
-    "description": "Everything is an article"
+    "description": "Beyond Reading. Reshaping a unique immersive experience for every book."
   },
   "nav": {
     "home": "Home",
@@ -10,7 +10,7 @@
   "home": {
     "welcome": "Welcome",
     "blogTitle": "Vibe Read",
-    "subtitle": "More than reading, it's an experience. Each book features its own design philosophy.",
+    "subtitle": "Beyond Reading. Reshaping a unique immersive experience for every book.",
     "endOfList": "— You've reached the end (only {count} books for now) —"
   },
   "back": {

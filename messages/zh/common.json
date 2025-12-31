@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "氛围阅读",
-    "description": "万物皆可阅读"
+    "description": "不止于阅读。为每本书，重塑独一无二的沉浸体验。"
   },
   "nav": {
     "home": "首页",
@@ -10,7 +10,7 @@
   "home": {
     "welcome": "Welcome",
     "blogTitle": "氛围阅读",
-    "subtitle": "不止于阅读，更是体验。每本书都拥有独特的设计理念。",
+    "subtitle": "不止于阅读。为每本书，重塑独一无二的沉浸体验。",
     "endOfList": "— 滑到底啦（目前只有 {count} 本书）—"
   },
   "back": {

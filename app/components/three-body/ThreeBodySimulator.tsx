@@ -57,7 +57,7 @@ export default function ThreeBodySimulator() {
 
             {/* Connection Lines */}
             <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-20 overflow-visible">
-                <g transform="translate(50%, 50%)"> {/* Center origin */}
+                <g style={{ transform: 'translate(50%, 50%)' }}> {/* Center origin */}
                     <line x1={bodies[0].x} y1={bodies[0].y} x2={bodies[1].x} y2={bodies[1].y} stroke="white" strokeWidth="1" />
                     <line x1={bodies[1].x} y1={bodies[1].y} x2={bodies[2].x} y2={bodies[2].y} stroke="white" strokeWidth="1" />
                     <line x1={bodies[2].x} y1={bodies[2].y} x2={bodies[0].x} y2={bodies[0].y} stroke="white" strokeWidth="1" />

@@ -3,7 +3,10 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 
+import { useTranslations } from 'next-intl'
+
 export default function DropletProbe() {
+    const t = useTranslations('three-body.vol2.content')
     const [attack, setAttack] = useState(false)
 
     const handleAttack = () => {
@@ -59,7 +62,7 @@ export default function DropletProbe() {
 
             {/* Overlay Text */}
             <div className="absolute bottom-4 right-4 font-mono text-xs text-cyan-500">
-                {attack ? "STATUS: FLEET DESTROYED" : "CLICK TO INITIATE ATTACK"}
+                {attack ? t('interactive.status_destroyed') : t('interactive.click_to_attack')}
             </div>
 
             {/* Explosion Flash */}

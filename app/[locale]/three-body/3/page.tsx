@@ -17,7 +17,7 @@ export default function Vol3Page() {
                 <div className="absolute inset-0 bg-black/60" />
 
                 {/* Visual Accent: Dimensional Collapse */}
-                <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20 mix-blend-overlay" />
+
                 <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black to-transparent" />
 
                 <div className="absolute z-10 text-center">

@@ -30,7 +30,7 @@ export default function VolumeOne({ onNext }: { onNext?: () => void }) {
                     {useTranslations('three-body.vol1.metadata')('title')}
                 </h2>
                 <p className="font-mono text-red-500 tracking-[0.3em] uppercase text-sm">
-                    THE BETRAYAL OF HUMANITY
+                    {useTranslations('three-body.vol1.metadata')('subtitle').toUpperCase()}
                 </p>
             </div>
 
@@ -76,7 +76,7 @@ export default function VolumeOne({ onNext }: { onNext?: () => void }) {
                                     : 'bg-transparent border border-red-500 text-red-500 hover:bg-red-500 hover:text-black'}
                             `}
                         >
-                            {transmitted ? 'SIGNAL SENT TO ALPHA CENTAURI' : t('chapters.one.action')}
+                            {transmitted ? t('chapters.one.action_sent') : t('chapters.one.action')}
                         </button>
                     </div>
                 </section>
