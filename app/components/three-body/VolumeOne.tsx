@@ -4,9 +4,10 @@ import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import ThreeBodySimulator from './ThreeBodySimulator'
 import CharacterMap from './CharacterMap'
+import CountdownBackground from './CountdownBackground'
 import { useState } from 'react'
 
-export default function VolumeOne() {
+export default function VolumeOne({ onNext }: { onNext?: () => void }) {
     // Keeping namespace as is
     const t = useTranslations('three-body.vol1.content')
     const [transmitted, setTransmitted] = useState(false)
@@ -18,7 +19,7 @@ export default function VolumeOne() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="w-full max-w-4xl mx-auto"
+            className="w-full max-w-6xl mx-auto"
         >
             {/* Header */}
             <div className="text-center mb-24 pt-12">
@@ -32,15 +33,26 @@ export default function VolumeOne() {
 
             <article className="px-6 font-serif text-white leading-loose">
                 {/* Synopsis */}
-                <section className="mb-24 text-center">
-                    <p className="text-xl md:text-2xl italic text-white/80 max-w-2xl mx-auto leading-relaxed">
+                {/* Synopsis */}
+                <section className="mb-24 text-center relative py-20 overflow-hidden">
+                    <CountdownBackground />
+                    <p className="text-xl md:text-2xl italic text-white/90 max-w-2xl mx-auto leading-relaxed relative z-10">
                         "{t('synopsis')}"
                     </p>
-                    <div className="w-12 h-1 bg-red-500 mx-auto mt-12" />
+                    <div className="w-12 h-1 bg-red-500 mx-auto mt-12 relative z-10" />
                 </section>
 
+                {/* Flashing Warning */}
+                <motion.div
+                    animate={{ opacity: [0, 1, 0, 1, 0, 0, 0, 1, 0] }}
+                    transition={{ duration: 4, repeat: Infinity, times: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.8, 0.9, 1] }}
+                    className="text-center mb-16 text-red-600 font-mono font-black tracking-[0.5em] text-sm md:text-lg select-none mix-blend-screen"
+                >
+                    {useTranslations('three-body.vol1.metadata')('warning')}
+                </motion.div>
+
                 {/* Character Archive */}
-                <CharacterMap />
+                <CharacterMap volume="vol1" theme="red" />
 
                 {/* Chapter I */}
                 <section className="mb-32 relative">
@@ -112,9 +124,12 @@ export default function VolumeOne() {
                     <p className="text-lg opacity-80 mb-12">
                         {t('conclusion.text')}
                     </p>
-                    <div className="inline-block border-2 border-white px-8 py-4 font-mono font-bold tracking-widest hover:bg-white hover:text-black transition-colors cursor-default">
+                    <button
+                        onClick={onNext}
+                        className="inline-block border-2 border-white px-8 py-4 font-mono font-bold tracking-widest hover:bg-white hover:text-black transition-colors cursor-pointer"
+                    >
                         {t('conclusion.final_word')}
-                    </div>
+                    </button>
                 </section>
             </article>
         </motion.div>

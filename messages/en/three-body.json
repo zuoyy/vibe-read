@@ -14,6 +14,7 @@
         "description": "From the Red Coast Base to the heat death of the universe.",
         "author": "Liu Cixin",
         "intro": "The universe is a dark forest.",
+        "warning": "DO NOT ANSWER! DO NOT ANSWER! DO NOT ANSWER!",
         "enter": "ENTER THE TRILOGY",
         "volumes": {
             "1": "VOLUME I",
@@ -38,7 +39,8 @@
         "metadata": {
             "title": "The Three-Body Problem",
             "subtitle": "Ye Wenjie's Betrayal",
-            "description": "Physics has never existed, and will never exist."
+            "description": "Physics has never existed, and will never exist.",
+            "warning": "DO NOT ANSWER! DO NOT ANSWER! DO NOT ANSWER!"
         },
         "content": {
             "synopsis": "Cultural Revolution. Red Coast Base. A message sent to the stars. Humanity's first contact with an alien civilization turns into a countdown to doomsday.",
@@ -109,6 +111,36 @@
         "content": {
             "synopsis": "Trisolaris has locked Earth's science with sophons. The Doomsday Battle is 400 years away. Humanity's only hope lies in the Wallfacer Project—strategies hidden in the human mind, the only place sophons cannot read.",
             "intro": "The universe is a dark forest. Every civilization is an armed hunter.",
+            "characters": {
+                "title": "Dramatis Personae",
+                "list": [
+                    {
+                        "name": "Luo Ji",
+                        "role": "The Wallfacer",
+                        "desc": "A cynical sociologist. He holds the switch to two worlds in his hand, becoming the only human Trisolaris fears.",
+                        "quote": "I am speaking to Trisolaris."
+                    },
+                    {
+                        "name": "Zhang Beihai",
+                        "role": "Natural Selection",
+                        "desc": "A far-sighted soldier. He knows humanity will lose. For the only spark of civilization to survive, he hijacks a warship into the deep void.",
+                        "quote": "It's all the same."
+                    },
+                    {
+                        "name": "Shi Qiang",
+                        "role": "The Guardian",
+                        "desc": "Luo Ji's guardian angel. In the darkest forest, he is the most reliable lighthouse protecting the final hope.",
+                        "quote": "Don't worry about it."
+                    },
+                    {
+                        "name": "Ding Yi",
+                        "role": "The Physicist",
+                        "desc": "The man who faced the Droplet. He tapped on the absolute smooth surface and was the first to see the cruel truth of the universe.",
+                        "quote": "Run, you fools!"
+                    }
+                ],
+                "relations": "Luo Ji (Swordholder) <-> Shi Qiang (Guardian) | Zhang Beihai (Escapist) <-> Ding Yi (Seeker)"
+            },
             "chapters": {
                 "one": {
                     "title": "I. The Wallfacers",
@@ -145,6 +177,36 @@
         "content": {
             "synopsis": "The deterrence era ends. Gravity broadcast is sent. The solar system is exposed to the dark forest. Now, humanity faces the ultimate weapon of cosmic cleansing: The Dual-Vector Foil.",
             "intro": "Weakness and ignorance are not barriers to survival, but arrogance is.",
+            "characters": {
+                "title": "Dramatis Personae",
+                "list": [
+                    {
+                        "name": "Cheng Xin",
+                        "role": "The Swordholder",
+                        "desc": "The embodiment of love. Because of her love and mercy, humanity lost two chances for survival. But is love wrong?",
+                        "quote": "I choose love."
+                    },
+                    {
+                        "name": "Yun Tianming",
+                        "role": "Staircase Project",
+                        "desc": "The lonely brain. He told three fairy tales among the stars, pointing out the only way of life for humanity in despair.",
+                        "quote": "He came, he loved, he gave her a star, he left."
+                    },
+                    {
+                        "name": "Thomas Wade",
+                        "role": "Gravity",
+                        "desc": "Ruthless for survival. Lose humanity, lose much; lose beastliness, lose everything.",
+                        "quote": "Advance! Advance!! Advance at any cost!!!"
+                    },
+                    {
+                        "name": "Sophon",
+                        "role": "The Messenger",
+                        "desc": "Trisolaris's representative on Earth. A beautiful woman in a tea ceremony, gracefully wielding a katana, with destruction behind her.",
+                        "quote": "Please enjoy your final days."
+                    }
+                ],
+                "relations": "Cheng Xin (Love) <-> Wade (Beastliness) | Yun Tianming (Guardian) <-> Sophon (Destruction)"
+            },
             "chapters": {
                 "one": {
                     "title": "I. The Staircase Project",

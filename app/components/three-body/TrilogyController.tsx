@@ -41,6 +41,7 @@ export default function TrilogyController() {
                     <p className="text-xl font-mono tracking-widest uppercase opacity-70">
                         {t('subtitle')}
                     </p>
+
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -97,10 +98,27 @@ export default function TrilogyController() {
                     style={{ backgroundColor: volumes[volume - 1].color }}
                 />
 
-                <AnimatePresence mode="wait">
-                    {volume === 1 && <VolumeOne key="vol1" />}
-                    {volume === 2 && <VolumeTwo key="vol2" />}
-                    {volume === 3 && <VolumeThree key="vol3" />}
+                <AnimatePresence mode="wait" onExitComplete={() => window.scrollTo(0, 0)}>
+                    {volume === 1 && (
+                        <VolumeOne
+                            key="vol1"
+                            onNext={() => setVolume(2)}
+                        />
+                    )}
+                    {volume === 2 && (
+                        <VolumeTwo
+                            key="vol2"
+                            onPrev={() => setVolume(1)}
+                            onNext={() => setVolume(3)}
+                        />
+                    )}
+                    {volume === 3 && (
+                        <VolumeThree
+                            key="vol3"
+                            onPrev={() => setVolume(2)}
+                            onRestart={() => setVolume(1)}
+                        />
+                    )}
                 </AnimatePresence>
             </div>
 

@@ -3,8 +3,9 @@
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import DropletProbe from './DropletProbe'
+import CharacterMap from './CharacterMap'
 
-export default function VolumeTwo() {
+export default function VolumeTwo({ onPrev, onNext }: { onPrev?: () => void, onNext?: () => void }) {
     const t = useTranslations('three-body.vol2.content')
     const tm = useTranslations('three-body.vol2.metadata')
 
@@ -13,7 +14,7 @@ export default function VolumeTwo() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="w-full max-w-4xl mx-auto"
+            className="w-full max-w-6xl mx-auto"
         >
             {/* Header */}
             <div className="text-center mb-24 pt-12">
@@ -30,6 +31,8 @@ export default function VolumeTwo() {
                 <p className="text-xl md:text-2xl text-white/80 mb-16 first-letter:text-7xl first-letter:font-black first-letter:mr-4 first-letter:float-left first-letter:text-cyan-500">
                     {t('synopsis')}
                 </p>
+
+                <CharacterMap volume="vol2" theme="cyan" />
 
                 {/* Chapter I: Wallfacers */}
                 <section className="bg-white/5 p-12 rounded-lg border border-white/10 mb-24 relative overflow-hidden group hover:border-cyan-500/50 transition-colors">
@@ -72,7 +75,12 @@ export default function VolumeTwo() {
                 <section className="mb-32 text-center max-w-2xl mx-auto opacity-70 hover:opacity-100 transition-opacity">
                     <h2 className="text-2xl font-bold mb-4 font-sans text-cyan-200">{t('conclusion.title')}</h2>
                     <p className="text-base mb-8">{t('conclusion.text')}</p>
-                    <div className="text-xs font-mono tracking-[0.5em]">{t('conclusion.final_word')}</div>
+                    <button
+                        onClick={onNext}
+                        className="text-xs font-mono tracking-[0.5em] cursor-pointer hover:text-cyan-400 transition-colors uppercase"
+                    >
+                        {t('conclusion.final_word')}
+                    </button>
                 </section>
 
             </article>

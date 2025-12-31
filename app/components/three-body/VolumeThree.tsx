@@ -3,8 +3,9 @@
 import { useTranslations } from 'next-intl'
 import { motion } from 'framer-motion'
 import DimensionalCollapse from './DimensionalCollapse'
+import CharacterMap from './CharacterMap'
 
-export default function VolumeThree() {
+export default function VolumeThree({ onPrev, onRestart }: { onPrev?: () => void, onRestart?: () => void }) {
     const t = useTranslations('three-body.vol3.content')
     const tm = useTranslations('three-body.vol3.metadata')
 
@@ -13,7 +14,7 @@ export default function VolumeThree() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="w-full max-w-4xl mx-auto"
+            className="w-full max-w-6xl mx-auto"
         >
             {/* Header */}
             <div className="text-center mb-24 pt-12 relative">
@@ -30,6 +31,8 @@ export default function VolumeThree() {
                 <p className="text-xl md:text-2xl text-white/80 mb-16 border-l-4 border-purple-500 pl-8">
                     {t('synopsis')}
                 </p>
+
+                <CharacterMap volume="vol3" theme="purple" />
 
                 {/* Chapter I */}
                 <section className="mb-24">
@@ -68,9 +71,12 @@ export default function VolumeThree() {
                 <section className="mb-32 text-center max-w-2xl mx-auto">
                     <h2 className="text-2xl font-bold mb-8 font-sans">{t('conclusion.title')}</h2>
                     <p className="text-lg opacity-80 mb-12">{t('conclusion.text')}</p>
-                    <div className="inline-block border-t border-b border-white/20 py-4 w-full font-mono font-bold tracking-widest">
+                    <button
+                        onClick={onRestart}
+                        className="inline-block border-t border-b border-white/20 py-4 w-full font-mono font-bold tracking-widest hover:bg-white/5 transition-colors cursor-pointer uppercase"
+                    >
                         {t('conclusion.final_word')}
-                    </div>
+                    </button>
                 </section>
             </article>
         </motion.div>
