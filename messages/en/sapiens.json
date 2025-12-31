@@ -17,29 +17,58 @@
         "chapters": {
             "cognitive": {
                 "title": "I. The Cognitive Revolution",
-                "subtitle": "The Tree of Knowledge mutation",
-                "text": "The most important thing to know about prehistoric humans is that they were unimportant animals. But around 70,000 years ago, Sapiens started doing very special things. They left Africa for the second time. They drove all other human species to extinction.\n\nThe secret was their language. Not just describing reality ('There is a lion'), but creating new realities (' The lion is the guardian spirit of our tribe'). This allowed us to trust strangers and build cities.",
+                "subtitle": "The Tree of Knowledge",
+                "text": "The secret was not describing reality ('There is a lion'), but creating new realities ('The lion is our guardian spirit'). This allowed us to trust strangers and build cities.",
+                "insights": [
+                    "The ability to create fiction",
+                    "Gossip as social adhesive",
+                    "Cooperation networks > 150 individuals"
+                ],
                 "toy_caption": "GOSSIP THEORY: LANGUAGE NETWORK SIMULATION"
             },
             "agricultural": {
                 "title": "II. The Agricultural Revolution",
                 "subtitle": "History's Biggest Fraud",
-                "text": "Scholars once proclaimed that the agricultural revolution was a great leap forward for humanity. They told a tale of progress fueled by human brain power. Evolution gradually produced ever more intelligent people. Eventually, people were so smart that they were able to decipher nature’s secrets, tame sheep and cultivate wheat. As soon as this happened, they cheerfully abandoned the grueling, dangerous, and often spartan life of hunter-gatherers, settling down to enjoy the pleasant, satiated life of farmers.\n\nThat tale is a fantasy. There is no evidence that people became more intelligent with time. Foragers knew the secrets of nature long before the Agricultural Revolution, since their survival depended on an intimate knowledge of the animals and plants they hunted and gathered. Rather than heralding a new era of easy living, the Agricultural Revolution left farmers with lives generally more difficult and less satisfying than those of foragers. Hunter-gatherers spent their time in more stimulating and varied ways, and were less in danger of starvation and disease. The Agricultural Revolution certainly enlarged the sum total of food at the disposal of humankind, but the extra food did not translate into a better diet or more leisure. Rather, it translated into population explosions and pampered elites. The average farmer worked harder than the average forager, and got a worse diet in return. The Agricultural Revolution was history’s biggest fraud.",
+                "text": "The Agricultural Revolution certainly enlarged the sum total of food, but the extra food did not translate into a better diet or more leisure. Rather, it translated into population explosions and pampered elites.",
+                "insights": [
+                    "Wheat domesticated us, not vice versa",
+                    "Quality of life actually decreased",
+                    "Population explosion and disease",
+                    "Luxuries become necessities"
+                ],
                 "quote": "We did not domesticate wheat. Wheat domesticated us."
             },
             "scientific": {
                 "title": "III. The Scientific Revolution",
                 "subtitle": "The Discovery of Ignorance",
-                "text": "The greatest discovery of the Scientific Revolution was the discovery of ignorance. Premodern traditions of knowledge such as Islam, Christianity, Buddhism and Confucianism asserted that everything that is important to know about the world was already known. The great gods and the one all-wise Creator had revealed all wisdom to us in scriptures and oral traditions.\n\nModern science differs from all previous traditions of knowledge in three critical ways:\n\n1. The willingness to admit ignorance.\n2. The centrality of observation and mathematics.\n3. The acquisition of new powers.\n\nWe realized we didn't know everything. And that admission unleashed the power to reshape the planet."
+                "text": "Premodern traditions asserted that everything important was already known. Modern science began when humans admitted: We don't know.",
+                "insights": [
+                    "The willingness to admit ignorance",
+                    "Centrality of observation and math",
+                    "Acquisition of new powers"
+                ]
             }
         },
         "conclusion": {
             "title": "The Future",
-            "text": "We are now standing on the threshold of heaven and hell, moving nervously between the gate of the one and the anteroom of the other. History is still undecided, and there are still members of the Sapiens species who believe that our path can be chosen.",
-            "final_word": "IS THERE ANYTHING MORE DANGEROUS THAN DISSATISFIED AND IRRESPONSIBLE GODS WHO DON'T KNOW WHAT THEY WANT?"
+            "text": "We are now standing on the threshold of heaven and hell. History is still undecided.",
+            "final_word": "IS THERE ANYTHING MORE DANGEROUS THAN DISSATISFIED GODS?"
         }
     },
     "toy": {
+        "science": {
+            "title": "MAP OF IGNORANCE",
+            "progress": "Exploration in progress...",
+            "complete": "Revolution Ignited",
+            "instruction": "Click areas to admit ignorance",
+            "areas": {
+                "america": "New Lands",
+                "australia": "Australia",
+                "physics": "Calculus",
+                "biology": "Microbiology",
+                "chemistry": "Elements"
+            }
+        },
         "disconnected": "CLICK TO SPREAD FICTION",
         "connected": "MYTH SHARED: NETWORK ESTABLISHED",
         "center": "Common Myth\nUnified Tribe",

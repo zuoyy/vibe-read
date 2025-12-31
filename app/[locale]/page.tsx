@@ -108,7 +108,7 @@ export default function HomePage() {
         </div>
       </div>
       {/* Header */}
-      <div className="relative flex flex-col items-center justify-center pt-15 pb-16 border-b-[2px] border-black bg-[#F2F2F0]">
+      <div className="relative flex flex-col items-center justify-center pt-20 pb-16 border-b-[2px] border-black bg-[#F2F2F0]">
         <div className="text-center px-4 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-black tracking-tighter text-black mb-4 leading-tight">
             {t('home.blogTitle')}

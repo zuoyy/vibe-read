@@ -7,6 +7,8 @@ import GossipGraph from './GossipGraph'
 import WheatTrap from './WheatTrap'
 
 
+import IgnoranceMap from './IgnoranceMap'
+
 export default function Content() {
     const t = useTranslations('sapiens.content')
 
@@ -37,9 +39,20 @@ export default function Content() {
                 <div className="max-w-4xl mx-auto">
                     <span className="font-mono text-xs tracking-widest text-[#D4A373] mb-2 block">{t('chapters.cognitive.subtitle')}</span>
                     <h2 className="text-4xl font-bold mb-8 font-serif">{t('chapters.cognitive.title')}</h2>
-                    <p className="text-lg leading-loose opacity-80 mb-12 whitespace-pre-line">
-                        {t('chapters.cognitive.text')}
-                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                        <p className="text-lg leading-loose opacity-80 font-serif">
+                            {t('chapters.cognitive.text')}
+                        </p>
+                        <ul className="space-y-4">
+                            {[0, 1, 2].map(i => (
+                                <li key={i} className="flex items-start gap-4">
+                                    <span className="font-mono text-[#D4A373] text-sm mt-1">0{i + 1}</span>
+                                    <span className="font-bold text-[#8B5A2B]">{t(`chapters.cognitive.insights.${i}`)}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
 
                     {/* TOY: GOSSIP GRAPH */}
                     <div className="my-16 -mx-6 md:-mx-12 lg:-mx-24 relative z-0">
@@ -58,12 +71,25 @@ export default function Content() {
                     <h2 className="text-4xl md:text-5xl font-bold mb-12 font-serif text-[#8B5A2B]">{t('chapters.agricultural.title')}</h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start mb-24">
-                        <p className="text-lg leading-loose opacity-80 whitespace-pre-line font-serif">
-                            {t('chapters.agricultural.text')}
-                        </p>
-                        <blockquote className="border-l-2 border-[#D4A373] pl-6 py-2 italic font-serif text-3xl text-[#D4A373] leading-tight">
-                            {t('chapters.agricultural.quote')}
-                        </blockquote>
+                        <div>
+                            <p className="text-lg leading-loose opacity-80 mb-8 font-serif">
+                                {t('chapters.agricultural.text')}
+                            </p>
+                            <blockquote className="border-l-2 border-[#D4A373] pl-6 py-2 italic font-serif text-2xl text-[#D4A373] leading-tight opacity-80">
+                                {t('chapters.agricultural.quote')}
+                            </blockquote>
+                        </div>
+
+                        <div className="bg-white/50 p-8 rounded-lg border border-[#D4A373]/10 backdrop-blur-sm">
+                            <h4 className="font-mono text-xs tracking-widest text-[#8B5A2B] mb-6 uppercase">Key Insights</h4>
+                            <ul className="space-y-6">
+                                {[0, 1, 2, 3].map(i => (
+                                    <li key={i} className="border-b border-[#D4A373]/20 pb-4 last:border-0 last:pb-0">
+                                        <span className="font-serif text-lg text-[#2c1810]">{t(`chapters.agricultural.insights.${i}`)}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
 
                     {/* TOY: WHEAT TRAP */}
@@ -76,17 +102,29 @@ export default function Content() {
             {/* Chapter III: Scientific Revolution */}
             <section className="bg-[#1a1512] text-[#f4f1ea] px-6 py-32 border-t border-[#D4A373]/20">
                 <div className="max-w-4xl mx-auto">
-                    <div className="flex flex-col md:flex-row gap-16 items-start mb-24">
-                        <div className="flex-1">
-                            <span className="font-mono text-xs tracking-widest text-[#D4A373] mb-4 block">{t('chapters.scientific.subtitle')}</span>
-                            <h2 className="text-4xl md:text-5xl font-bold mb-8 font-serif">{t('chapters.scientific.title')}</h2>
+                    <div className="mb-16">
+                        <span className="font-mono text-xs tracking-widest text-[#D4A373] mb-4 block">{t('chapters.scientific.subtitle')}</span>
+                        <h2 className="text-4xl md:text-5xl font-bold mb-8 font-serif">{t('chapters.scientific.title')}</h2>
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                             <p className="text-lg leading-loose opacity-70 whitespace-pre-line">
                                 {t('chapters.scientific.text')}
                             </p>
+                            <div className="bg-white/5 p-6 rounded border border-white/10">
+                                {[0, 1, 2].map(i => (
+                                    <div key={i} className="mb-4 last:mb-0">
+                                        <div className="text-[#D4A373] font-mono text-xs mb-1">POINT 0{i + 1}</div>
+                                        <div className="font-serif text-xl">{t(`chapters.scientific.insights.${i}`)}</div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
 
-
+                    {/* TOY: IGNORANCE MAP */}
+                    <div className="mb-24 -mx-6 md:-mx-12 border border-white/10 rounded-lg overflow-hidden">
+                        <IgnoranceMap />
+                    </div>
 
                     <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#D4A373]/30 to-transparent my-16" />
 
