@@ -17,6 +17,11 @@
         "intro": "The universe is a dark forest.",
         "warning": "DO NOT ANSWER! DO NOT ANSWER! DO NOT ANSWER!",
         "enter": "ENTER THE TRILOGY",
+        "nav": {
+            "vol1": "Three-Body",
+            "vol2": "Dark Forest",
+            "vol3": "Death's End"
+        },
         "volumes": {
             "1": "VOLUME I",
             "2": "VOLUME II",

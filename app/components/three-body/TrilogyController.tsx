@@ -15,9 +15,9 @@ export default function TrilogyController() {
     const tBack = useTranslations('back')
 
     const volumes = [
-        { id: 1, color: '#FF3333', name: 'Vol.1' },
-        { id: 2, color: '#00EAFF', name: 'Vol.2' },
-        { id: 3, color: '#BF00FF', name: 'Vol.3' }
+        { id: 1, color: '#FF3333' },
+        { id: 2, color: '#00EAFF' },
+        { id: 3, color: '#BF00FF' }
     ]
 
     // Cover View
@@ -69,8 +69,6 @@ export default function TrilogyController() {
                     <Link href="/" className="text-xs font-mono opacity-50 hover:opacity-100 transition-opacity">
                         ← {tBack('library')}
                     </Link>
-                    <div className="h-4 w-[1px] bg-white/20" />
-                    <span className="font-bold text-sm tracking-tighter">{t('title')}</span>
                 </div>
 
                 <div className="flex gap-2 bg-white/5 p-1 rounded-lg">
@@ -78,13 +76,13 @@ export default function TrilogyController() {
                         <button
                             key={v.id}
                             onClick={() => setVolume(v.id as 1 | 2 | 3)}
-                            className={`px-4 py-1 rounded text-xs font-mono font-bold transition-all
+                            className={`px-4 py-1 rounded text-xs font-mono font-bold transition-all cursor-pointer
                                 ${volume === v.id
                                     ? 'bg-white text-black shadow-lg scale-105'
                                     : 'text-white/50 hover:text-white hover:bg-white/10'}
                             `}
                         >
-                            {v.name}
+                            {t(`nav.vol${v.id}`)}
                         </button>
                     ))}
                 </div>
