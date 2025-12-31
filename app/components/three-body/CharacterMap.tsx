@@ -76,7 +76,7 @@ export default function CharacterMap({
 
             <div className="mt-8 text-center">
                 <p className="text-xs font-mono text-white/30 tracking-widest uppercase">
-                    RELATIONSHIP NETWORK: {t('relations')}
+                    {t('relations')}
                 </p>
             </div>
         </div>
