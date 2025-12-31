@@ -11,6 +11,11 @@ import '@/app/globals.css'
 export const metadata: Metadata = {
   title: 'Vibe Blog',
   description: 'Everything is an article',
+  icons: {
+    icon: '/icon.png',
+    shortcut: '/favicon.ico',
+    apple: '/icon.png',
+  },
 }
 
 type Props = {
