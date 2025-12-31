@@ -11,9 +11,10 @@ type Props = {
 export async function generateMetadata({ params }: Props) {
     const { locale } = await params
     const t = await getTranslations({ locale, namespace: 'sapiens.metadata' })
+    const tSite = await getTranslations({ locale, namespace: 'site' })
 
     return {
-        title: t('title'),
+        title: `${t('title')} - ${tSite('title')}`,
         description: t('description'),
     }
 }
