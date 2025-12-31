@@ -6,6 +6,7 @@ import { Link } from '@/i18n/navigation'
 import VolumeOne from './VolumeOne'
 import VolumeTwo from './VolumeTwo'
 import VolumeThree from './VolumeThree'
+import ChaoticSphereBackground from './ChaoticSphereBackground'
 import { useTranslations } from 'next-intl'
 
 export default function TrilogyController() {
@@ -26,10 +27,7 @@ export default function TrilogyController() {
             <main className="h-screen w-full bg-[#050505] text-white flex flex-col items-center justify-center relative overflow-hidden cursor-pointer"
                 onClick={() => setStatus('open')}>
 
-                {/* Background Pulse */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-[80vw] h-[80vw] bg-white/5 rounded-full blur-[100px] animate-pulse" />
-                </div>
+                <ChaoticSphereBackground />
 
                 <motion.div
                     layoutId="trilogy-title"
@@ -48,7 +46,7 @@ export default function TrilogyController() {
                         transition={{ delay: 1 }}
                         className="mt-12 inline-flex items-center gap-2 text-sm font-mono border border-white/30 px-6 py-3 rounded-full hover:bg-white hover:text-black transition-colors"
                     >
-                        CLICK TO ENTER
+                        {t('enter')}
                     </motion.div>
                 </motion.div>
 
