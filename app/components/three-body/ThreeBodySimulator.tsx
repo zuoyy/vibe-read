@@ -3,7 +3,10 @@
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 
+import { useTranslations } from 'next-intl'
+
 export default function ThreeBodySimulator() {
+    const t = useTranslations('three-body.vol1.content.simulator')
     // Simplified 3-body visualizer (kinematic, not strictly physics engine to avoid heavy libs)
     // We simulate 3 chaotic points
 
@@ -29,8 +32,8 @@ export default function ThreeBodySimulator() {
     return (
         <div className="w-full h-[400px] bg-black border border-white/10 relative overflow-hidden flex items-center justify-center my-12">
             <div className="absolute top-4 left-4 text-xs font-mono text-white/50">
-                STATUS: UNSTABLE ORBIT<br />
-                EPOCH: CHAOTIC ERA
+                {t('status')}<br />
+                {t('epoch')}
             </div>
 
             {/* Trails (SVG) */}

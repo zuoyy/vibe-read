@@ -6,6 +6,12 @@ import { useState } from 'react'
 export default function DimensionalCollapse() {
     const [collapsed, setCollapsed] = useState(false)
 
+    const handleCollapse = () => {
+        if (collapsed) return
+        setCollapsed(true)
+        setTimeout(() => setCollapsed(false), 6000)
+    }
+
     return (
         <div className="relative w-full h-[500px] border border-white/10 overflow-hidden bg-[#050505] perspective-1000 group">
             {/* 3D Elements (Before Collapse) */}
@@ -41,7 +47,7 @@ export default function DimensionalCollapse() {
                     scale: [1, 1.2, 1],
                 }}
                 transition={{ duration: collapsed ? 4 : 2, repeat: collapsed ? 0 : Infinity }}
-                onClick={() => setCollapsed(true)}
+                onClick={handleCollapse}
             >
                 {!collapsed && <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 font-mono text-[10px] whitespace-nowrap text-white/50">CLICK TO FLATTEN</div>}
             </motion.div>

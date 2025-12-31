@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 
 export default function IgnoranceMap() {
@@ -15,6 +15,15 @@ export default function IgnoranceMap() {
         { id: 4, x: 80, y: 30, name: "Biology", label: "Microbiology" },
         { id: 5, x: 30, y: 70, name: "Chemistry", label: "Elements" }
     ]
+
+    useEffect(() => {
+        if (discovered.length === areas.length && areas.length > 0) {
+            const timer = setTimeout(() => {
+                setDiscovered([])
+            }, 6000)
+            return () => clearTimeout(timer)
+        }
+    }, [discovered])
 
     const handleDiscover = (id: number) => {
         if (!discovered.includes(id)) {

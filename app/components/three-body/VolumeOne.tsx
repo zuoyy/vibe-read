@@ -12,7 +12,10 @@ export default function VolumeOne({ onNext }: { onNext?: () => void }) {
     const t = useTranslations('three-body.vol1.content')
     const [transmitted, setTransmitted] = useState(false)
 
-    const handleTransmit = () => setTransmitted(true)
+    const handleTransmit = () => {
+        setTransmitted(true)
+        setTimeout(() => setTransmitted(false), 5000)
+    }
 
     return (
         <motion.div
@@ -67,9 +70,9 @@ export default function VolumeOne({ onNext }: { onNext?: () => void }) {
                         <button
                             onClick={handleTransmit}
                             disabled={transmitted}
-                            className={`px-8 py-3 rounded font-mono text-sm tracking-widest transition-all duration-500
+                            className={`px-8 py-3 rounded font-mono text-sm tracking-widest transition-all duration-500 cursor-pointer
                                 ${transmitted
-                                    ? 'bg-red-500 text-black shadow-[0_0_50px_rgba(255,0,0,0.5)]'
+                                    ? 'bg-red-500 text-black shadow-[0_0_50px_rgba(255,0,0,0.5)] cursor-default'
                                     : 'bg-transparent border border-red-500 text-red-500 hover:bg-red-500 hover:text-black'}
                             `}
                         >

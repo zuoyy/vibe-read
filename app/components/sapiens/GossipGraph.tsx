@@ -17,6 +17,13 @@ export default function GossipGraph() {
         setNodes(newNodes)
     }, [])
 
+    useEffect(() => {
+        if (connected) {
+            const timer = setTimeout(() => setConnected(false), 8000)
+            return () => clearTimeout(timer)
+        }
+    }, [connected])
+
     return (
         <div className="w-full h-[400px] md:h-[500px] relative overflow-hidden group cursor-pointer select-none"
             onClick={() => setConnected(!connected)}>

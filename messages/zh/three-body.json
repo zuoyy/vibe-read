@@ -50,6 +50,10 @@
         },
         "content": {
             "synopsis": "文化大革命。红岸基地。发往群星的信息。人类与外星文明的第一次接触变成了末日的倒计时。",
+            "simulator": {
+                "status": "状态：轨道不稳定",
+                "epoch": "纪元：乱纪元"
+            },
             "characters": {
                 "title": "主要人物",
                 "list": [

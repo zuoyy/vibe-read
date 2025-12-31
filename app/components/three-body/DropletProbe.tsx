@@ -6,8 +6,14 @@ import { useState, useEffect } from 'react'
 export default function DropletProbe() {
     const [attack, setAttack] = useState(false)
 
+    const handleAttack = () => {
+        if (attack) return
+        setAttack(true)
+        setTimeout(() => setAttack(false), 5000)
+    }
+
     return (
-        <div className="relative w-full h-[400px] bg-black border border-white/10 rounded-lg overflow-hidden cursor-crosshair" onClick={() => setAttack(true)}>
+        <div className="relative w-full h-[400px] bg-black border border-white/10 rounded-lg overflow-hidden cursor-crosshair" onClick={handleAttack}>
             {/* Grid Line Background (Space Fleet Formation) */}
             <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20 bg-[size:50px_50px]" />
 

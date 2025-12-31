@@ -50,6 +50,10 @@
         },
         "content": {
             "synopsis": "Cultural Revolution. Red Coast Base. A message sent to the stars. Humanity's first contact with an alien civilization turns into a countdown to doomsday.",
+            "simulator": {
+                "status": "STATUS: UNSTABLE ORBIT",
+                "epoch": "EPOCH: CHAOTIC ERA"
+            },
             "characters": {
                 "title": "Dramatis Personae",
                 "list": [

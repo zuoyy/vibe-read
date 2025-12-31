@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 
 export default function WheatTrap() {
@@ -10,10 +10,23 @@ export default function WheatTrap() {
     const [population, setPopulation] = useState(100)
     const [happiness, setHappiness] = useState(100)
 
+    // Auto-reset when civilization collapses
+    useEffect(() => {
+        if (happiness <= 0) {
+            const timer = setTimeout(() => {
+                setWheat(0)
+                setPopulation(100)
+                setHappiness(100)
+            }, 4000)
+            return () => clearTimeout(timer)
+        }
+    }, [happiness])
+
     // Auto-grow wheat animation
     const stalks = Array.from({ length: 40 })
 
     const harvest = () => {
+        if (happiness <= 0) return
         setWheat(prev => prev + 10)
         setPopulation(prev => prev + Math.floor(Math.random() * 50))
         setHappiness(prev => Math.max(0, prev - 15))
