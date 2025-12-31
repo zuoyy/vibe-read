@@ -2,7 +2,6 @@
 
 export const runtime = 'edge'
 import { useTranslations } from 'next-intl'
-import LanguageSwitch from '@/app/components/common/LanguageSwitch'
 import { Link } from '@/i18n/navigation'
 import { BookProject } from '@/app/components/types'
 import { motion, Variants } from 'framer-motion'
@@ -114,7 +113,6 @@ export default function HomePage() {
   return (
     <main className="min-h-screen relative text-black selection:bg-black selection:text-white">
       <InteractiveBackground />
-      <LanguageSwitch />
       {/* Vertical Sidebar Text */}
       <div className="fixed left-4 top-1/2 -translate-y-1/2 hidden xl:block pointer-events-none z-0">
         <div className="writing-mode-vertical-lr rotate-180 text-[120px] font-black text-black/[0.03] tracking-tighter leading-none whitespace-nowrap select-none">

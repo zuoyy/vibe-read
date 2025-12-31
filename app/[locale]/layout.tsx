@@ -6,6 +6,7 @@ import { routing } from '@/i18n/routing'
 import { Locale } from '@/i18n/config'
 import NavigationProgress from '@/app/components/common/NavigationProgress'
 import SwipeBack from '@/app/components/common/SwipeBack'
+import LanguageSwitch from '@/app/components/common/LanguageSwitch'
 import '@/app/globals.css'
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -40,10 +41,13 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale}>
       <body>
-        <NavigationProgress />
-        <SwipeBack>
-          <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
-        </SwipeBack>
+        <NextIntlClientProvider messages={messages}>
+          <LanguageSwitch />
+          <NavigationProgress />
+          <SwipeBack>
+            {children}
+          </SwipeBack>
+        </NextIntlClientProvider>
       </body>
     </html>
   )

@@ -14,7 +14,7 @@ export default function LanguageSwitch() {
   }
 
   return (
-    <div className="fixed top-4 right-4 flex gap-2 z-50">
+    <div className="absolute top-4 right-4 flex gap-2 z-50">
       {locales.map((l) => (
         <button
           key={l}
