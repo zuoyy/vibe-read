@@ -1,6 +1,8 @@
 import { getTranslations } from 'next-intl/server'
 import TrilogyController from '@/app/components/three-body/TrilogyController'
 
+export const runtime = 'edge'
+
 type Props = {
     params: Promise<{ locale: string }>
 }

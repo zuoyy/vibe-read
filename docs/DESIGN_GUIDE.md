@@ -117,6 +117,35 @@
 ### 5. 迭代调整
 设计不是一次成型的，编码过程中可以随时调整 design.md。
 
+## 语言纯净协议 (Language Purity Protocol)
+
+为确保极致的国际化体验，所有开发必须严格遵守以下规则：
+
+1.  **零硬编码 (Zero Hardcoding)**：
+    *   严禁在 UI 组件中直接写入中文或英文字符串。
+    *   所有用户可见文本必须提取到 `messages/{locale}/` 下的 JSON 文件中。
+2.  **严格分离 (Strict Separation)**：
+    *   中文界面 (`/zh`) 严禁出现未经设计的英文字符（设计风格需要的英文装饰除外）。
+    *   英文界面 (`/en`) 严禁出现中文字符。
+3.  **动态元数据 (Dynamic Metadata)**：
+    *   页面标题（Title）和描述（Description）必须根据当前语言动态生成。
+    *   格式规范：`{Page Title} - {Site Title}`（如 "三体 - 氛围阅读"）。
+
+## 部署与技术规范 (Deployment & Technical Specs)
+
+### Cloudflare Pages 部署
+本项目部署于 Cloudflare Pages，对运行时有严格要求：
+
+1.  **Edge Runtime**：
+    *   所有非静态路由（特别是涉及动态渲染的页面，如 `app/[locale]/[bookId]/page.tsx`）必须显式声明 Edge Runtime。
+    *   代码：`export const runtime = 'edge'`
+    *   **注意**：Cloudflare Pages 部署失败的常见原因即为此配置缺失。
+
+### 资源目录规范
+1.  **公共资源**：
+    *   静态图片（如 `favicon.ico`, `icon.png`）必须存放于 `/public` 目录。
+    *   Next.js Metadata 配置（如 `icons`）需显式指向 `/public` 下的路径。
+
 ## 相关文档
 
 - [ARCHITECTURE.md](./ARCHITECTURE.md) - 技术架构
