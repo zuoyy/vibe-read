@@ -139,7 +139,7 @@ export default function HomePage() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`text-sm font-bold tracking-widest uppercase transition-colors relative
+              className={`text-sm font-bold tracking-widest uppercase transition-colors relative cursor-pointer
                         ${selectedCategory === category ? 'text-black' : 'text-black/40 hover:text-black/70'}
                     `}
             >
