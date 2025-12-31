@@ -35,8 +35,8 @@ export default function VolumeOne({ onNext }: { onNext?: () => void }) {
                 {/* Synopsis */}
                 {/* Synopsis */}
                 <section className="mb-24 text-center relative py-20 overflow-hidden">
-                    <CountdownBackground />
-                    <p className="text-xl md:text-2xl italic text-white/90 max-w-2xl mx-auto leading-relaxed relative z-10">
+                    <CountdownBackground customClasses="text-5xl md:text-9xl text-red-600/30 scale-100" />
+                    <p className="text-2xl md:text-4xl italic text-white/90 max-w-4xl mx-auto leading-relaxed relative z-10">
                         "{t('synopsis')}"
                     </p>
                     <div className="w-12 h-1 bg-red-500 mx-auto mt-12 relative z-10" />
