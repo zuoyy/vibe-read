@@ -81,7 +81,7 @@ export default function Content() {
                         </div>
 
                         <div className="bg-white/50 p-8 rounded-lg border border-[#D4A373]/10 backdrop-blur-sm">
-                            <h4 className="font-mono text-xs tracking-widest text-[#8B5A2B] mb-6 uppercase">Key Insights</h4>
+                            <h4 className="font-mono text-xs tracking-widest text-[#8B5A2B] mb-6 uppercase">{t('key_insights')}</h4>
                             <ul className="space-y-6">
                                 {[0, 1, 2, 3].map(i => (
                                     <li key={i} className="border-b border-[#D4A373]/20 pb-4 last:border-0 last:pb-0">
@@ -113,7 +113,7 @@ export default function Content() {
                             <div className="bg-white/5 p-6 rounded border border-white/10">
                                 {[0, 1, 2].map(i => (
                                     <div key={i} className="mb-4 last:mb-0">
-                                        <div className="text-[#D4A373] font-mono text-xs mb-1">POINT 0{i + 1}</div>
+                                        <div className="text-[#D4A373] font-mono text-xs mb-1">{t('point')} 0{i + 1}</div>
                                         <div className="font-serif text-xl">{t(`chapters.scientific.insights.${i}`)}</div>
                                     </div>
                                 ))}

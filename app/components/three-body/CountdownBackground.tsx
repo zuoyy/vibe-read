@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
-export default function CountdownBackground() {
+export default function CountdownBackground({ small = false }: { small?: boolean }) {
     const [time, setTime] = useState(25920000000) // Approx ~300 days in ms, arbitrary start
 
     useEffect(() => {
@@ -27,7 +27,11 @@ export default function CountdownBackground() {
     return (
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none select-none">
             {/* Main Giant Countdown */}
-            <div className="font-mono font-black text-[12vw] md:text-[8vw] text-red-600/30 leading-none tracking-tighter tabular-nums scale-150 opacity-100 mix-blend-screen">
+            <div className={`font-mono font-black leading-none tracking-tighter tabular-nums mix-blend-screen whitespace-nowrap
+                ${small
+                    ? 'text-2xl md:text-3xl text-red-600/[0.25] scale-100'
+                    : 'text-[12vw] md:text-[8vw] text-red-600/45 scale-150'
+                }`}>
                 {formatTime(time)}
             </div>
 

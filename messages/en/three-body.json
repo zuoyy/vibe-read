@@ -6,7 +6,8 @@
         "coverStyle": {
             "color": "#050505",
             "texture": "cyber"
-        }
+        },
+        "read_now": "READ NOW"
     },
     "hub": {
         "title": "Remembrance of Earth's Past",

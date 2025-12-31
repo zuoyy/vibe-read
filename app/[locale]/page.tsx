@@ -30,34 +30,48 @@ function InteractiveBackground() {
   )
 }
 // Swiss Design Book Card
+// Premium Book Card
 function BookCard({ book, index }: { book: BookProject, index: number }) {
   const t = useTranslations(book.meta.id)
-  const { Cover, meta } = book
+  const tTags = useTranslations('tags')
+  const { Cover } = book
+
+  // Get theme color from metadata (default to black if missing)
+  const themeColor = t('metadata.coverStyle.color') || '#000000'
+
   return (
-    <Link href={`/${book.meta.id}`} className="block w-full h-full group">
-      <div className="w-full h-full bg-white border-[2px] border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 hover:-translate-x-1 transition-all duration-200 flex flex-col">
-        {/* Visual Area - The "Cover" */}
-        {/* [DESIGN NOTE] Aspect Ratio controls height: aspect-[3/4] is portrait (book), aspect-[4/3] is landscape. */}
-        <div className="relative w-full aspect-[4/5] border-b-[2px] border-black overflow-hidden bg-black group-hover:invert transition-all duration-300">
-          {/* Constrain Cover to fit */}
-          <div className="absolute inset-0 transform scale-100 group-hover:scale-105 transition-transform duration-500">
+    <Link href={`/${book.meta.id}`} className="block w-full h-full group relative">
+      {/* Dynamic Glow Background */}
+      <div
+        className="absolute -inset-4 opacity-0 group-hover:opacity-20 transition-opacity duration-500 rounded-3xl blur-2xl z-0"
+        style={{ backgroundColor: themeColor }}
+      />
+
+      <div className="relative z-10 w-full h-full flex flex-col transition-all duration-300 transform group-hover:-translate-y-2">
+        {/* Cover Container */}
+        <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-300 bg-[#F2F2F0]">
+          {/* The Actual Cover Component */}
+          <div className="w-full h-full transform transition-transform duration-700 group-hover:scale-105">
             <Cover inShelf={true} title={t('metadata.title')} />
           </div>
-        </div>
-        {/* Info Area */}
-        <div className="flex-1 p-4 flex flex-col justify-between bg-white text-black min-h-[120px]">
-          <div>
-            <h3 className="text-2xl font-bold leading-tight tracking-tight mb-2 line-clamp-2">
-              {t('metadata.title')}
-            </h3>
+
+          {/* Overlay Gradient on Hover */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-8">
+            <span className="text-white font-mono text-xs tracking-[0.2em] border border-white/30 px-4 py-2 rounded-full backdrop-blur-md uppercase">
+              {t('metadata.read_now')}
+            </span>
           </div>
-          <div className="flex flex-col gap-3 mt-2">
-            <div className="w-full h-[1px] bg-black/10"></div>
-            <div className="flex justify-end items-end">
-              <div className="flex flex-col items-end">
-                <span className="font-bold text-xs tracking-tight">{t('metadata.author')}</span>
-              </div>
-            </div>
+        </div>
+
+        {/* Info Area - Minimalist */}
+        <div className="mt-6 text-center">
+          <h3 className="text-2xl font-bold text-black/90 mb-2 font-serif group-hover:text-black transition-colors">
+            {t('metadata.title')}
+          </h3>
+          <div className="flex items-center justify-center gap-2 text-xs font-mono tracking-widest text-black/40 uppercase">
+            <span>{t('metadata.author')}</span>
+            <span className="w-1 h-1 rounded-full bg-black/20" />
+            <span>{tTags(book.meta.tags[0])}</span>
           </div>
         </div>
       </div>
@@ -113,7 +127,7 @@ export default function HomePage() {
           <h1 className="text-4xl md:text-6xl font-black tracking-tighter text-black mb-4 leading-tight">
             {t('home.blogTitle')}
           </h1>
-          <p className="text-lg font-medium text-black/60 max-w-xl mx-auto leading-relaxed tracking-tight">
+          <p className="text-lg font-medium text-black/60 max-w-xl md:max-w-5xl mx-auto leading-relaxed tracking-tight">
             {t('home.subtitle')}
           </p>
         </div>

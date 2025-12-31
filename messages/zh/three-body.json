@@ -7,7 +7,8 @@
         "coverStyle": {
             "color": "#050505",
             "texture": "cyber"
-        }
+        },
+        "read_now": "立即阅读"
     },
     "hub": {
         "title": "三体",

@@ -2,6 +2,7 @@ import { BookProject } from '@/app/components/types'
 import Hero from './Hero'
 import Content from './Content'
 import GenericCover from '@/app/components/common/GenericCover'
+import ThreeBodyCover from './ThreeBodyCover'
 
 // This index now effectively points to Vol 1 metadata but links to the "Hub" via the Hero logic or Main Page logic.
 // However, the main page links to /three-body (the hub). 
@@ -31,6 +32,6 @@ export const newBook: BookProject = {
     // I need to adjust the JSON or the Home Page. 
     // Easier: Map `three-body.metadata` in JSON to the Trilogy info.
 
-    Cover: (props) => <GenericCover {...props} color="#050505" texture="cyber" />,
+    Cover: (props) => <ThreeBodyCover {...props} color="#050505" />,
     Experience: Content // This is technically unused if we go to Hub, but required by type.
 }

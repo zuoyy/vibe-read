@@ -6,9 +6,12 @@
         "coverStyle": {
             "color": "#D4A373",
             "texture": "paper"
-        }
+        },
+        "read_now": "READ NOW"
     },
     "content": {
+        "key_insights": "Key Insights",
+        "point": "POINT",
         "synopsis": "Seventy thousand years ago, there were at least six different human species on earth. They were insignificant animals, whose ecological impact was less than that of fireflies or jellyfish. Today, there is only one. Us. Homo Sapiens. How did we do it? We bought into myths.",
         "intro": {
             "title": "The Animal That Became a God",
@@ -61,6 +64,9 @@
             "progress": "Exploration in progress...",
             "complete": "Revolution Ignited",
             "instruction": "Click areas to admit ignorance",
+            "terra_incognita": "Terra Incognita",
+            "hic_sunt_dragones": "Hic Sunt Dracones",
+            "explored_suffix": "Explored",
             "areas": {
                 "america": "New Lands",
                 "australia": "Australia",

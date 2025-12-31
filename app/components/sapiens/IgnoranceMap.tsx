@@ -31,7 +31,7 @@ export default function IgnoranceMap() {
 
             {/* Title / Watermark */}
             <div className="absolute top-8 left-8 z-10 opacity-40 mix-blend-multiply pointer-events-none">
-                <h3 className="font-serif text-3xl italic text-[#8B5A2B]">Terra Incognita</h3>
+                <h3 className="font-serif text-3xl italic text-[#8B5A2B]">{t('terra_incognita')}</h3>
                 <p className="font-mono text-xs text-[#8B5A2B] tracking-widest mt-1 uppercase">{t('title')}</p>
             </div>
 
@@ -59,7 +59,7 @@ export default function IgnoranceMap() {
 
                         {!isDiscovered && (
                             <div className="relative z-10 font-serif italic text-[#8B5A2B]/40 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                Hic Sunt Dracones
+                                {t('hic_sunt_dragones')}
                             </div>
                         )}
 
@@ -91,7 +91,7 @@ export default function IgnoranceMap() {
 
             {/* Progress Text */}
             <div className="absolute bottom-6 right-8 font-serif italic text-[#8B5A2B] text-sm opacity-60">
-                {discovered.length === areas.length ? t('complete') : `${Math.round(discovered.length / areas.length * 100)}% Explored`}
+                {discovered.length === areas.length ? t('complete') : `${Math.round(discovered.length / areas.length * 100)}% ${t('explored_suffix')}`}
             </div>
         </div>
     )

@@ -6,9 +6,12 @@
         "coverStyle": {
             "color": "#D4A373",
             "texture": "paper"
-        }
+        },
+        "read_now": "立即阅读"
     },
     "content": {
+        "key_insights": "关键洞察",
+        "point": "要点",
         "synopsis": "七万年前，地球上至少有六种不同的人类物种。他们是微不足道的动物，对生态的影响力甚至不如萤火虫或水母。今天，只剩下一种。我们。智人。我们是如何做到的？因为我们相信神话。",
         "intro": {
             "title": "成为神的动物",
@@ -61,6 +64,9 @@
             "progress": "正在探索未知...",
             "complete": "科学革命已启动",
             "instruction": "点击区域承认无知",
+            "terra_incognita": "未知之地",
+            "hic_sunt_dragones": "此处有龙 (未知)",
+            "explored_suffix": "已探索",
             "areas": {
                 "america": "新大陆",
                 "australia": "澳大利亚",
