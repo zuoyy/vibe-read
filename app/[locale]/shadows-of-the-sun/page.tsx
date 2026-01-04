@@ -2,6 +2,8 @@ import Content from '@/app/components/shadows-of-the-sun/Content'
 import Hero from '@/app/components/shadows-of-the-sun/Hero'
 import { getTranslations } from 'next-intl/server'
 
+export const runtime = 'edge'
+
 type Props = {
     params: Promise<{ locale: string }>
 }
