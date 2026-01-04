@@ -1,9 +1,11 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import SunAndShadowSimulator from './SunAndShadowSimulator'
-import CobraEncounter from './CobraEncounter'
-import AfricanTime from './AfricanTime'
+import dynamic from 'next/dynamic'
+
+const SunAndShadowSimulator = dynamic(() => import('./SunAndShadowSimulator'), { ssr: false })
+const CobraEncounter = dynamic(() => import('./CobraEncounter'), { ssr: false })
+const AfricanTime = dynamic(() => import('./AfricanTime'), { ssr: false })
 
 export default function Content() {
     const t = useTranslations('shadows-of-the-sun.content')
