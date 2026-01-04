@@ -156,6 +156,7 @@
                 "status_destroyed": "状态：舰队毁灭",
                 "click_to_attack": "点击启动水滴攻击"
             },
+            "wallfacers": "面壁计划：四个人被选中去欺骗整个宇宙。",
             "chapters": {
                 "one": {
                     "title": "一、面壁者",
@@ -224,6 +225,10 @@
             },
             "interactive": {
                 "click_to_flatten": "点击进行降维打击"
+            },
+            "dimensions": {
+                "title": "维度坍缩",
+                "desc": "宇宙正在扁平化。见证深度的终结。"
             },
             "chapters": {
                 "one": {

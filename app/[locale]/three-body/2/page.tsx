@@ -1,12 +1,14 @@
-export const runtime = 'edge'
+
 
 import { Link } from '@/i18n/navigation'
 import GenericCover from '@/app/components/common/GenericCover'
-import { useTranslations } from 'next-intl'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
-export default function Vol2Page() {
-    const t = useTranslations('three-body.vol2.content')
-    const tm = useTranslations('three-body.vol2.metadata')
+export default async function Vol2Page({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params
+    setRequestLocale(locale)
+    const t = await getTranslations({ locale, namespace: 'three-body.vol2.content' })
+    const tm = await getTranslations({ locale, namespace: 'three-body.vol2.metadata' })
 
     // Unified Black Theme
     return (
@@ -39,24 +41,6 @@ export default function Vol2Page() {
                     <h2 className="text-3xl font-bold mb-6 font-sans">The Wallfacer Project</h2>
                     <p className="opacity-80 text-lg">{t('wallfacers')}</p>
                 </section>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
-                    <div className="border-l-2 border-cyan-500 pl-6 py-2">
-                        <h3 className="text-xl font-bold mb-2 font-sans">{t('luoji.name')}</h3>
-                        <p className="opacity-60 text-sm mb-4">{t('luoji.desc')}</p>
-                        <i className="text-cyan-400">"{t('luoji.quote')}"</i>
-                    </div>
-                    <div className="border-l-2 border-white/20 pl-6 py-2">
-                        <h3 className="text-xl font-bold mb-2 font-sans">{t('droplet.title')}</h3>
-                        <p className="opacity-60 text-sm">{t('droplet.desc')}</p>
-                    </div>
-                </div>
-
-                <div className="text-center mt-32">
-                    <Link href="/three-body" className="inline-block border border-white/20 px-8 py-3 font-mono text-xs tracking-widest hover:bg-white hover:text-black transition-colors">
-                        ← RETURN TO TRILOGY HUB
-                    </Link>
-                </div>
             </article>
         </main>
     )

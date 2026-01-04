@@ -1,7 +1,6 @@
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import TrilogyController from '@/app/components/three-body/TrilogyController'
 
-export const runtime = 'edge'
 
 type Props = {
     params: Promise<{ locale: string }>
@@ -18,6 +17,8 @@ export async function generateMetadata({ params }: Props) {
     }
 }
 
-export default function ThreeBodyPage() {
+export default async function ArticlePage({ params }: Props) {
+    const { locale } = await params
+    setRequestLocale(locale)
     return <TrilogyController />
 }

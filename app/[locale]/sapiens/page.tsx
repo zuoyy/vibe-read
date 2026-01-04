@@ -1,8 +1,8 @@
-export const runtime = 'edge'
+
 
 import Content from '@/app/components/sapiens/Content'
 import Hero from '@/app/components/sapiens/Hero'
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 
 type Props = {
     params: Promise<{ locale: string }>
@@ -19,7 +19,9 @@ export async function generateMetadata({ params }: Props) {
     }
 }
 
-export default function ArticlePage() {
+export default async function ArticlePage({ params }: Props) {
+    const { locale } = await params
+    setRequestLocale(locale)
     return (
         <main className="min-h-screen bg-[#F2F0E9] text-black">
             <Hero />

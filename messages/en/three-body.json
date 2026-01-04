@@ -156,6 +156,7 @@
                 "status_destroyed": "STATUS: FLEET DESTROYED",
                 "click_to_attack": "CLICK TO INITIATE ATTACK"
             },
+            "wallfacers": "The Wallfacer Project: Four men chosen to deceive the universe itself.",
             "chapters": {
                 "one": {
                     "title": "I. The Wallfacers",
@@ -224,6 +225,10 @@
             },
             "interactive": {
                 "click_to_flatten": "CLICK TO FLATTEN"
+            },
+            "dimensions": {
+                "title": "Dimensional Collapse",
+                "desc": "The universe is flattening. Witness the end of depth."
             },
             "chapters": {
                 "one": {
