@@ -12,7 +12,8 @@ export const TAG_ORDER = [
     'HISTORY',      // 历史类
     'PHILOSOPHY',   // 哲学类
     'FUTURE',       // 未来类
-    'LIFE'          // 生活类
+    'LIFE',         // 生活类
+    'JOURNALISM'    // 新闻纪实类
 ]
 
 // 如果需要标签映射（例如显示中文），可以在这里定义

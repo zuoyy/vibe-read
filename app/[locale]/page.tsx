@@ -10,10 +10,12 @@ import GenericCover from '@/app/components/common/GenericCover'
 // Mock Books Definition
 import { newBook as threeBody } from '@/app/components/three-body'
 import { newBook as sapiens } from '@/app/components/sapiens'
+import { shadowsOfTheSun } from '@/app/components/shadows-of-the-sun'
 // 书架内容
 const library: BookProject[] = [
   threeBody,
-  sapiens
+  sapiens,
+  shadowsOfTheSun
 ]
 import { TAG_ORDER } from '@/app/config/tags'
 // Interactive Background with Swiss Grid

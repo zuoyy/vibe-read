@@ -17,6 +17,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       ...commonMessages,
       'three-body': (await import(`@/messages/${locale}/three-body.json`)).default,
       'sapiens': (await import(`@/messages/${locale}/sapiens.json`)).default,
+      'shadows-of-the-sun': (await import(`@/messages/${locale}/shadows-of-the-sun.json`)).default,
     },
   }
 })

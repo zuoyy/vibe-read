@@ -1,0 +1,43 @@
+{
+    "metadata": {
+        "title": "The Shadow of the Sun",
+        "description": "A visceral journey into the heart of Africa through the eyes of Ryszard Kapuściński.",
+        "coverStyle": {
+            "color": "#FDB813",
+            "texture": "grain"
+        },
+        "author": "Ryszard Kapuściński",
+        "read_now": "READ NOW"
+    },
+    "hero": {
+        "title": "The Shadow of the Sun",
+        "subtitle": "Ryszard Kapuściński",
+        "enter": "Enter the Heat"
+    },
+    "content": {
+        "synopsis": "Africa is not a monolith. It is a continent of diverse, blistering realities. \"The continent is too large to describe. It is a veritable ocean, a separate planet, a varied, immensely rich cosmos. Only with the greatest simplification, for the sake of convenience, can we say 'Africa'.\"",
+        "chapter1": {
+            "title": "The Beginning: Collision",
+            "text": "Only the sun is certain here. We arrived in Africa not as discoverers, but as collisions.\n\nMore than anything, one is struck by the light. Light everywhere. Brightness everywhere. Everywhere, the sun. Yesterday, you were in the gray rain of London, bathed in cool twilight. Today, the aircraft door opens, and you are hit by a physical wall of heat. The air shimmers. The world seems to be burning."
+        },
+        "chapter2": {
+            "title": "The Anatomy of a Coup",
+            "text": "In the early mornings, the radio plays martial music. That is how you know power has shifted. \n\nA coup in Africa is not a revolution. It is often simply a changing of the guard, a redistribution of privileges among the elite. The soldiers come from the barracks, seize the radio station, the palace, the airport. The people wait. They watch from the shadows of their verandas. They know that whoever rules, the sun will still burn them tomorrow.\n\nPower here is not abstract. It is physical. It is the ability to command shade, to command water, to command life."
+        },
+        "chapter3": {
+            "title": "The Cobra's Heart",
+            "text": "Life here balances on the edge. In an abandoned hut in Tanzania, I once discovered I was sharing my shelter with a cobra. The distance between life and death was measured in inches. \n\nWe froze. To move was to trigger the strike. In that silence, you understand the primal law of the bush: survival is not guaranteed. It is negotiated, moment by moment, with forces far older than us."
+        },
+        "chapter4": {
+            "title": "African Time",
+            "text": "The European has his watch; the African has his time. For the Westerner, time is a ruler, a tyrant, an objective machine that marches forward regardless of human action. The bus leaves at 8:00, whether you are there or not.\n\nHere, time is elastic. It is made by humans. The bus leaves... when it is full. It leaves when the driver is ready. If no one comes, there is no time. Time appears when we need it, and hibernates when we don't. We wait in the sun, entering a state of suspended animation, a profound patience that the Western mind calls 'wasting time', but which is actually a harmony with existence."
+        },
+        "chapter5": {
+            "title": "The Sun",
+            "text": "The sun in Africa is not the romantic sun of European holidays. It is a despot. It rules every hour of the day.\n\nAt dawn, it is a sudden explosion of light. There is no twilight, no gentle transition. One moment it is night, the next the world is ablaze. By noon, it is a white tyrant. It silences the birds, stops the work, drives every living thing into hiding. The world holds its breath. Under this sun, thought becomes difficult, movement becomes pain. It is a biological weight that presses down on the skull.\n\nThe only relief is the shadow. In the shadow, life returns. Conversations happen, deals are struck, rest is taken. The shadow is the only true home in this landscape. To describe Africa, one must describe its shadows."
+        }
+    },
+    "toy": {
+        "instruction": "Move the Sun. Find the Truth in the Shade."
+    }
+}
