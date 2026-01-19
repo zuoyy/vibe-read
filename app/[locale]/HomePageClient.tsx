@@ -202,7 +202,7 @@ export default function HomePageClient() {
 
             {/* Footer */}
             <footer className="py-12 text-center text-sm font-bold text-black/40 uppercase tracking-widest border-t-[2px] border-black/5 mx-6 md:mx-12">
-                {t('footer.copyright')}
+                {t('footer.copyright', { year: new Date().getFullYear() })}
             </footer>
         </main>
     )

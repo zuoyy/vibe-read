@@ -23,7 +23,7 @@
     "switch": "切换语言"
   },
   "footer": {
-    "copyright": "© 2025 氛围阅读. 保留所有权利。"
+    "copyright": "© {year} 氛围阅读. 保留所有权利。"
   },
   "tags": {
     "ALL": "全部书籍",

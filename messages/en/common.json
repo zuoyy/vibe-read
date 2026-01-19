@@ -23,7 +23,7 @@
     "switch": "Switch Language"
   },
   "footer": {
-    "copyright": "© 2025 Vibe Read. All rights reserved."
+    "copyright": "© {year} Vibe Read. All rights reserved."
   },
   "tags": {
     "ALL": "All",
